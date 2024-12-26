@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruosok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .number-input {
+            display: flex;
+            align-items: center;
+        }
+
+        .number-input button {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: #ddd;
+        }
+
+        .number-input input {
+            width: 50px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body class="bg-body-secondary">
+    <div class="primary ">
+        <div class="container-fluid">
+            <div class="row justify-content-between primary p-3 align-items-center">
+                <div class="col-6 col-sm-4 col-md-3  ">
+                    <a href="" class="display-6 fw-semibold text-decoration-none text-white">
+                        <i class="bi bi-box2-heart-fill"></i> Gruosok
+                    </a>
+                </div>
+                <!-- Content that moves to offcanvas -->
+                <div class="col-7 d-none d-md-block">
+                    <div class="container-fluid">
+                        <div class="d-flex p-1 bg-white">
+                            <input type="text" class="form-control border-0" placeholder="Search" aria-label="Search"
+                                aria-describedby="basic-addon1">
+                            <button type="button" class="input-group-text button-primary rounded-0 px-4 text-white"
+                                id="basic-addon1">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex">
+                            <a href="../index.html" class="px-2 text-decoration-none text-white">Home</a>
+                            <a href="../index.html#about" class="px-2 text-decoration-none text-white">About</a>
+                            <a href="../index.html#product" class="px-2 text-decoration-none text-white">Product</a>
+                            <a href="../index.html#order" class="px-2 text-decoration-none text-white">Order</a>
+                            <a href="../blog/index.html" class="px-2 text-decoration-none text-white">Blog</a>
+                            <a href="../shop/index.html" class="px-2 text-decoration-none text-white">Marketplace</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-1 justify-content-end d-flex">
+                    <a href="../keranjang/index.html"
+                        class="display-6 mx-2 fw-semibold text-decoration-none text-white">
+                        <i class="bi bi-cart3"></i>
+                    </a>
+                    <div class="d-md-none">
+                        <button class="border-0 bg-transparent text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list display-6"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Offcanvas Navbar -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column">
+                        <input type="text" class="form-control mb-3" placeholder="Search" aria-label="Search">
+                        <a href="../index.html" class="mb-2 text-decoration-none">Home</a>
+                        <a href="../index.html#about" class="mb-2 text-decoration-none">About</a>
+                        <a href="../index.html#product" class="mb-2 text-decoration-none">Product</a>
+                        <a href="../index.html#order" class="mb-2 text-decoration-none">Order</a>
+                        <a href="../blog/index.html" class="mb-2 text-decoration-none">Blog</a>
+                        <a href="../shop/index.html" class="mb-2 text-decoration-none">Marketplace</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mx-1">
+            <div class="col-12 col-md-6 py-2 px-1" style="height: 550px;">
+                <div class="border bg-white shadow p-3 overflow-y-auto scrollable-content" style="height: 100%;">
+                    <p class="fs-4">Keranjang Pesanan</p>
+                    <div class="d-flex border p-3 bg-white shadow-sm mb-2">
+                        <div class="me-3">
+                            <img src="../assets/img/shop/Jason.jpg" alt="Foto Profil" class="" width="80">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Gitar Akustik</h5>
+                            <p class="mb-0">Gitar tanam besi, Kapo, Senar ganti</p>
+                            <p class="mb-0 text-success">Rp.180.000</p>
+                        </div>
+                        <div class="">
+                            <p>x1</p>
+                            <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault"
+                                checked>
+                        </div>
+                    </div>
+                    <div class="d-flex border p-3 bg-white shadow-sm mb-2">
+                        <div class="me-3">
+                            <img src="../assets/img/shop/Hp iphone.jpg" alt="Foto Profil" class="" width="80">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Iphone HDC</h5>
+                            <p class="mb-0">Iphone HDC Silver</p>
+                            <p class="mb-0 text-success">Rp.1.200.000</p>
+                        </div>
+                        <div class="">
+                            <p>x1</p>
+                            <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="d-flex border p-3 bg-white shadow-sm mb-2">
+                        <div class="me-3">
+                            <img src="../assets/img/shop/hodie.jpg" alt="Foto Profil" class="" width="80">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Hodie Couple</h5>
+                            <p class="mb-0">Hodie Pink, Hodie Hitam</p>
+                            <p class="mb-0 text-success">Rp.178.000</p>
+                        </div>
+                        <div class="">
+                            <p>x2</p>
+                            <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault"
+                                checked>
+                        </div>
+                    </div>
+                    <div class="d-flex border p-3 bg-white shadow-sm mb-2">
+                        <div class="me-3">
+                            <img src="../assets/img/shop/raket.jpg" alt="Foto Profil" class="" width="80">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Raket Bekas</h5>
+                            <p class="mb-0">Raket Bekas Kasur :3</p>
+                            <p class="mb-0 text-success">Rp.600.000</p>
+                        </div>
+                        <div class="">
+                            <p>x1</p>
+                            <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="d-flex border p-3 bg-white shadow-sm mb-2">
+                        <div class="me-3">
+                            <img src="../assets/img/shop/meja1.jpg" alt="Foto Profil" class="" width="80">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Meja Kerja</h5>
+                            <p class="mb-0">Meja Kerja Kayu Pc</p>
+                            <p class="mb-0 text-success">Rp.80.000</p>
+                        </div>
+                        <div class="">
+                            <p>x2</p>
+                            <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                    <div class="d-flex border p-3 bg-white shadow-sm mb-2">
+                        <div class="me-3">
+                            <img src="../assets/img/shop/Labubu.jpg" alt="Foto Profil" class="" width="80">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Labubu Second</h5>
+                            <p class="mb-0">Labubu Original Second</p>
+                        </div>
+                        <div class="">
+                            <p>x2</p>
+                            <input class="form-check-input rounded-0" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 py-2 px-1" style="height: 550;">
+                <div class="border bg-white shadow p-3">
+                    <p class="fs-4">Checkout</p>
+                    <div class=" border p-3 bg-white shadow-sm mb-2">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"
+                                    disabled>Desa Karang Legi, Jalan Rejoso, RT.4/RW.1, Karanglegi, Trangkil, KAB. PATI - TRANGKIL, JAWA TENGAH, ID 59153</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" border p-3 bg-white shadow-sm mb-2">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label for="" class="form-label">Total Harga</label>
+                                <input type="text" value="Rp.358.000" class="form-control rounded-0" disabled>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="" class="form-label">Voucer</label>
+                                <select class="form-select rounded-0" aria-label="Default select example" disabled>
+                                    <option selected>Gratis Ongkir sd Rp.30.000</option>
+                                </select>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="" class="form-label">Metode Pengiriman</label>
+                                <select class="form-select rounded-0" aria-label="Default select example" disabled>
+                                    <option selected>JNE Cargo</option>
+                                </select>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label for="" class="form-label">Metode Pengiriman</label>
+                                <select class="form-select rounded-0" aria-label="Default select example" disabled>
+                                    <option selected>JNE Cargo</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" border p-3 bg-white shadow-sm mb-2">
+                        <button class="form-control btn submit text-white rounded-0">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer primary text-white">
+        <div class="container py-4">
+            <div class="row">
+                <!-- Informasi -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">About Us</h5>
+                    <p>Learn more about our platform, mission, and vision.</p>
+                </div>
+                <!-- Navigasi -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Categories</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- Akun -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">My Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Login</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Register</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Order History</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Wishlist</a></li>
+                    </ul>
+                </div>
+                <!-- Sosial Media -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Follow Us</h5>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="m-0">&copy; 2024 Gruosok - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        // Fungsi untuk menambahkan atau menghapus kelas berdasarkan ukuran layar
+        function toggleResponsiveClass() {
+            const element = document.getElementById('wrap');
+            if (window.innerWidth < 780) {
+                element.classList.add('flex-wrap'); // Tambahkan kelas jika layar kurang dari 768px
+            } else {
+                element.classList.remove('flex-wrap'); // Hapus kelas jika layar lebih besar atau sama dengan 768px
+            }
+        }
+
+        // Panggil fungsi saat halaman pertama kali dimuat
+        toggleResponsiveClass();
+
+        // Panggil fungsi setiap kali ukuran layar berubah
+        window.addEventListener('resize', toggleResponsiveClass);
+
+        // Fungsi untuk menambah nilai
+        function increaseValue() {
+            const input = document.getElementById('numberInput');
+            const total = document.getElementsByClassName('total')[0];
+            const total2 = document.getElementsByClassName('total')[1];
+
+            const harga = 12000;
+            let curentTotal = parseInt(total.value);
+            let currentValue = parseInt(input.value);
+            input.value = currentValue + 1;
+            total.value = curentTotal + harga;
+            total2.value = curentTotal - harga;
+
+        }
+
+        // Fungsi untuk mengurangi nilai
+        function decreaseValue() {
+            const input = document.getElementById('numberInput');
+            const total = document.getElementsByClassName('total')[0];
+            const total2 = document.getElementsByClassName('total')[1];
+            const harga = 12000;
+            let curentTotal = parseInt(total.value);
+            let currentValue = parseInt(input.value);
+            if (currentValue > 0) { // Pastikan nilai tidak kurang dari 0
+                input.value = currentValue - 1;
+                total.value = curentTotal - harga;
+                total2.value = curentTotal - harga;
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

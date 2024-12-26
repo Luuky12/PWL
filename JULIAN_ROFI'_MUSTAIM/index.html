@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruosok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .number-input {
+            display: flex;
+            align-items: center;
+        }
+
+        .number-input button {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: #ddd;
+        }
+
+        .number-input input {
+            width: 50px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+        }
+
+        .hero {
+            background-image: url('assets/img/western-style-building-2312246_1280.jpg');
+            background-size: cover;
+            height: 35rem;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+    <div class="primary ">
+        <div class="container-fluid">
+            <div class="row justify-content-between primary p-3 align-items-center">
+                <div class="col-6 col-sm-4 col-md-3  ">
+                    <a href="" class="display-6 fw-semibold text-decoration-none text-white">
+                        <i class="bi bi-box2-heart-fill"></i> Gruosok
+                    </a>
+                </div>
+                <!-- Content that moves to offcanvas -->
+                <div class="col-7 d-none d-md-block">
+                    <div class="container-fluid">
+                        <div class="d-flex p-1 bg-white">
+                            <input type="text" class="form-control border-0" placeholder="Search" aria-label="Search"
+                                aria-describedby="basic-addon1">
+                            <button type="button" class="input-group-text button-primary rounded-0 px-4 text-white"
+                                id="basic-addon1">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex">
+                            <a href="index.html" class="px-2 text-decoration-none text-white">Home</a>
+                            <a href="#about" class="px-2 text-decoration-none text-white">About</a>
+                            <a href="#product" class="px-2 text-decoration-none text-white">Product</a>
+                            <a href="#order" class="px-2 text-decoration-none text-white">Order</a>
+                            <a href="blog/index.html" class="px-2 text-decoration-none text-white">Blog</a>
+                            <a href="shop/index.html" class="px-2 text-decoration-none text-white">Marketplace</a>
+                            <a href="../index.html" class="px-2 text-decoration-none text-white">Back</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-1 justify-content-end d-flex">
+                    <div class="d-md-none">
+                        <button class="border-0 bg-transparent text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list display-6"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Offcanvas Navbar -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column">
+                        <input type="text" class="form-control mb-3" placeholder="Search" aria-label="Search">
+                        <a href="index.html" class="mb-2 text-decoration-none">Home</a>
+                        <a href="index.html#about" class="mb-2 text-decoration-none">About</a>
+                        <a href="index.html#product" class="mb-2 text-decoration-none">Product</a>
+                        <a href="index.html#order" class="mb-2 text-decoration-none">Order</a>
+                        <a href="blog/index.html" class="mb-2 text-decoration-none">Blog</a>
+                        <a href="shop/index.html" class="mb-2 text-decoration-none">Marketplace</a>
+                        <a href="../index.html" class="px-2 text-decoration-none text-white">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero -->
+    <div class="hero">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="text-light pt-5 text-center">
+                <h1 class="display-2">Grub Rosokan</h1>
+                <p>"Marketplace Inovatif untuk Jual Beli Barang Rosokan <br> secara Mudah dan Efisien"</p>
+                <a href="shop/index.html" class="btn btn-secondary primary rounded-0"><i class="bi bi-cart-plus"></i> Go To
+                    Shop</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- section -->
+    <div class="my-3" id="about">
+        <div class="container p-3">
+            <div class="container-fluid ">
+                <h3 class="display-6 pb-3 text-center">Visi Misi</h3>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/img/Pasar-Loak-Jembatan-Item-Jatinegara-687894336.webp"
+                            class="mb-3 ms-md-3 img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-lg-6 ">
+                        <p>Menjadi platform digital terkemuka yang mendukung pengelolaan dan pemanfaatan barang bekas
+                            secara berkelanjutan, sekaligus mendorong ekonomi sirkular untuk menciptakan lingkungan yang
+                            lebih hijau dan produktif.</p>
+                        <table class="table table-dark table-borderless">
+                            <tr>
+                                <td>1</td>
+                                <td>Menghubungkan penjual dan pembeli barang rosokan dengan mudah melalui teknologi
+                                    digital.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mendorong kesadaran masyarakat akan pentingnya daur ulang dan pengelolaan limbah.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Memberikan solusi praktis dan transparan dalam transaksi jual beli barang bekas.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Membantu menciptakan peluang ekonomi baru bagi komunitas pengumpul dan penjual
+                                    barang rosokan.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Mendukung keberlanjutan lingkungan dengan meminimalkan limbah melalui pemanfaatan
+                                    barang bekas.</td>
+                            </tr>
+                        </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section -->
+    <div class="my-3">
+        <div class="container p-3">
+            <div class="container-fluid ">
+                <h3 class="display-6 pb-3 text-center">Sejarah Bruosok</h3>
+                <div class="clearfix">
+                    <img src="assets/img/premium_photo-1683133531613-6a7db8847c72.avif"
+                        class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="...">
+
+                    <p>
+
+                        Bruosok lahir dari ide sederhana untuk memanfaatkan teknologi dalam mengelola barang bekas yang
+                        sering kali dianggap tidak berharga. Konsep ini muncul pada tahun 2023, ketika pendirinya
+                        melihat potensi besar dalam meningkatkan nilai ekonomi barang rosokan melalui platform digital.
+
+                        Awalnya, transaksi barang bekas masih dilakukan secara konvensional, dengan keterbatasan dalam
+                        hal jangkauan dan efisiensi. Banyak orang tidak tahu harus ke mana untuk menjual atau membeli
+                        barang bekas, sementara di sisi lain, komunitas pengumpul barang rosokan kesulitan menemukan
+                        pasar yang lebih luas.
+
+                        Melalui Bruosok, masalah ini berusaha dipecahkan dengan menghadirkan platform online yang
+                        memungkinkan siapa saja untuk menjual dan membeli barang bekas secara transparan, cepat, dan
+                        mudah. Sejak diluncurkan, Bruosok berkomitmen untuk tidak hanya menjadi tempat transaksi, tetapi
+                        juga meningkatkan kesadaran masyarakat tentang pentingnya mendaur ulang dan mengurangi limbah.
+
+                        Kini, Bruosok terus berkembang dengan beragam fitur inovatif yang mendukung transaksi jual beli,
+                        seperti pengelolaan stok barang, pelacakan transaksi, dan sistem pembayaran yang aman. Dengan
+                        semangat keberlanjutan dan inovasi, Bruosok bercita-cita menjadi pemimpin dalam industri ekonomi
+                        sirkular berbasis digital di Indonesia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- produk -->
+    <div class="container text-center p-3 my-3" id="product">
+        <h3 class="display-6 pb-4 ">Produk Type</h3>
+        <div class=" overflow-x-auto">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4 col-lg-3 px-2">
+                    <div class="card bg-white p-1  rounded-0 text-white my-2 ">
+                        <img src="assets/img/product/fasion.jpg" class="card-img-top img-thumbnail shadow rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Fasion</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 px-2">
+
+                    <div class="card bg-white p-1  rounded-0 text-white my-2 ">
+                        <img src="assets/img/product/furniture.jpg" class="card-img-top img-thumbnail shadow rounded-0"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Furniture</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 px-2">
+
+                    <div class="card bg-white p-1  rounded-0 text-white my-2 ">
+                        <img src="assets/img/product/gadget.jpg" class="card-img-top img-thumbnail shadow rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Gadget</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 px-2">
+
+                    <div class="card bg-white p-1  rounded-0 text-white my-2 ">
+                        <img src="assets/img/product/Home Appliances Store Design.jpg"
+                            class="card-img-top img-thumbnail shadow rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Electronic</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 px-2">
+
+                    <div class="card bg-white p-1  rounded-0 text-white my-2 ">
+                        <img src="assets/img/product/Guitar Store.jpg" class="card-img-top img-thumbnail shadow rounded-0"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Music</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 px-2">
+
+                    <div class="card bg-white p-1  rounded-0 text-white my-2 ">
+                        <img src="assets/img/product/vechicle.jpg" class="card-img-top img-thumbnail shadow rounded-0"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Vehicle</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 px-2">
+
+                    <div class="card bg-white p-1  rounded-0 text-white my-2 ">
+                        <img src="assets/img/product/Kidz Station PIM 1.jpg" class="card-img-top img-thumbnail shadow rounded-0"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Toys</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 px-2">
+
+                    <div class="card bg-white p-1  rounded-0 text-white my-2 ">
+                        <img src="assets/img/product/RAK BESI BESAR TOKO SUPERMARKET BAHAN BANGUNAN _ MATERIAL, JUAL KE JAKARTA, SURABAYA, BANDUNG, YOGYAKARTA, SEMARANG & SERANG.jpg"
+                            class="card-img-top img-thumbnail shadow rounded-0" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-black">Material</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pelayanan -->
+    <div class="container" id="order">
+        <div class="container-fluid">
+            <h3 class="display-6 pb-2 text-center mt-5 mb-4">Lokasi</h3>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="clearfix">
+                            <iframe class="col-md-6 float-md-end mb-3 ms-md-3 " id="Pelayanan-link0"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45306.12427288485!2d110.98522409843197!3d-6.6002196952413765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e712b30c568d431%3A0xfcdfb06e625bc5a8!2sJaya%20Santoso%20Rosok%20%22Kiso%22!5e1!3m2!1sen!2sid!4v1735156566695!5m2!1sen!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div>
+                                <p class="title-pelayanan fs-3 fw-semibold" id="Pelayanan-deskripsi0">Joyo Santoso Rosok
+                                    "Kiso"</p>
+                                <table class="table-pelayanan">
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-geo-alt-fill me-3"></i></td>
+                                        <td colspan="2" id="Pelayanan-lokasi0">RT.02/RW.02, Soneyan, Purworejo,
+                                            Margoyoso, Pati Regency, Central Java 59154</td>
+                                    </tr>
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-clock-fill me-3"></i></td>
+                                        <td id="Pelayanan-jam0">Open 24 Hours</td>
+                                    </tr>
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-telephone-fill"></i></td>
+                                        <td id="Pelayanan-nomor0">081293145203</td>
+                                    </tr>
+                                </table>
+                                <a href="https://www.google.com/maps/place/Jaya+Santoso+Rosok+%22Kiso%22/@-6.6002197,110.9852241,10404m/data=!3m1!1e3!4m10!1m2!2m1!1stoko+barang+bekas!3m6!1s0x2e712b30c568d431:0xfcdfb06e625bc5a8!8m2!3d-6.605062!4d111.0407214!15sChF0b2tvIGJhcmFuZyBiZWthc1oTIhF0b2tvIGJhcmFuZyBiZWthc5IBDHRocmlmdF9zdG9yZeABAA!16s%2Fg%2F11rs0tj1rn?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                                    class="btn primary rounded-0 text-white m-3"><i
+                                        class="bi bi-box-arrow-in-right"></i> Go to
+                                    Map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="clearfix">
+                            <iframe class="col-md-6 float-md-end mb-3 ms-md-3 " id="Pelayanan-link0"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48776.41931281808!2d110.81203369793126!3d-6.826072599999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c50c2a8a3e19%3A0x5af0f8a5e1126811!2sJual%20Beli%20Barang%20Bekas%20Putra%20Kudus!5e1!3m2!1sen!2sid!4v1735156802386!5m2!1sen!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div>
+                                <p class="title-pelayanan fs-3 fw-semibold" id="Pelayanan-deskripsi0">Jual Beli Barang
+                                    Bekas Putra Kudus</p>
+                                <table class="table-pelayanan">
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-geo-alt-fill me-3"></i></td>
+                                        <td colspan="2" id="Pelayanan-lokasi0">Jl. Suryo Kusumo, Jepang, Kec. Mejobo,
+                                            Kabupaten Kudus, Jawa Tengah 59381</td>
+                                    </tr>
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-clock-fill me-3"></i></td>
+                                        <td id="Pelayanan-jam0">Open 08.00 - 20.00</td>
+                                    </tr>
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-telephone-fill"></i></td>
+                                        <td id="Pelayanan-nomor0">081327599123</td>
+                                    </tr>
+                                </table>
+                                <a href="https://www.google.com/maps/place/Jual+Beli+Barang+Bekas+Putra+Kudus/@-6.8260726,110.8120337,11201m/data=!3m1!1e3!4m10!1m2!2m1!1stoko+barang+bekas!3m6!1s0x2e70c50c2a8a3e19:0x5af0f8a5e1126811!8m2!3d-6.8260726!4d110.8732334!15sChF0b2tvIGJhcmFuZyBiZWthc5IBEHNlY29uZF9oYW5kX3Nob3DgAQA!16s%2Fg%2F11cs4jwjvn?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                                    class="btn primary rounded-0 text-white m-3"><i
+                                        class="bi bi-box-arrow-in-right"></i> Go to
+                                    Map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="clearfix">
+                            <iframe class="col-md-6 float-md-end mb-3 ms-md-3 " id="Pelayanan-link0"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48787.42493899096!2d111.05698296953122!3d-6.717210099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e772db3d5dec8d7%3A0xe0628a089af49084!2sAdi%20Jaya%20Rosok!5e1!3m2!1sen!2sid!4v1735157017404!5m2!1sen!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div>
+                                <p class="title-pelayanan fs-3 fw-semibold" id="Pelayanan-deskripsi0">Adi Jaya Rosok</p>
+                                <table class="table-pelayanan">
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-geo-alt-fill me-3"></i></td>
+                                        <td colspan="2" id="Pelayanan-lokasi0">Sinoman, Kec. Pati, Kabupaten Pati, Jawa
+                                            Tengah 59119</td>
+                                    </tr>
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-clock-fill me-3"></i></td>
+                                        <td id="Pelayanan-jam0">Open 24 Hours</td>
+                                    </tr>
+                                    <tr class="mb-3">
+                                        <td><i class="bi bi-telephone-fill"></i></td>
+                                        <td id="Pelayanan-nomor0">081293700985</td>
+                                    </tr>
+                                </table>
+                                <a href="https://www.google.com/maps/place/Adi+Jaya+Rosok/@-6.7172101,111.056983,11204m/data=!3m1!1e3!4m10!1m2!2m1!1stoko+barang+bekas!3m6!1s0x2e772db3d5dec8d7:0xe0628a089af49084!8m2!3d-6.7172101!4d111.0981817!15sChF0b2tvIGJhcmFuZyBiZWthc1oTIhF0b2tvIGJhcmFuZyBiZWthc5IBDHRocmlmdF9zdG9yZeABAA!16s%2Fg%2F11s2plc_pw?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                                    class="btn primary rounded-0 text-white m-3"><i
+                                        class="bi bi-box-arrow-in-right"></i> Go to
+                                    Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pemesanan -->
+    <div class="container container-fluid">
+        <h3 class="display-6 pb-2 text-center mt-5 mb-4">Pemesanan</h3>
+        <div class="row justify-content-between">
+            <div class="card bg-dark text-light mb-3 border-0 col-12 col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">Bruosok</h5>
+                    <p class="card-text">Jangan Tunggu Besok, Mulai dari Bruosok Sekarang! <br>
+                        Berikan barang bekas Anda kesempatan kedua. <br>
+                        Klik sekarang untuk menjual atau membeli barang rosokan berkualitas! 🌟 <br>
+                        <br>
+                        🚛 Langsung pesan di sini dan nikmati kemudahan transaksi tanpa ribet! <br>
+                        🌐 Temukan juga kami di sosial media untuk tips, penawaran menarik, dan kisah inspiratif dari
+                        para pengguna Bruosok. <br>
+                        Dengan Bruosok, barang bekas jadi lebih berkelas! 💡<br> Dan kunjungi juga sosial media kami
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border bg-dark border-0">
+                        <a href="https://www.facebook.com/olxid" class="text-white text-decoration-none"><i
+                                class="bi bi-facebook"></i> @OLX Indonesia</a>
+                    </li>
+                    <li class="list-group-item border bg-dark border-0">
+                        <a href="https://x.com/olxid_official" class="text-white text-decoration-none"><i
+                                class="bi bi-twitter-x"></i> @olxid_official</a>
+                    </li>
+                    <li class="list-group-item border bg-dark border-0">
+                        <a href="https://www.instagram.com/olx_id/" class="text-white text-decoration-none"><i
+                                class="bi bi-instagram"></i> @olx_id</a>
+                    </li>
+                    <li class="list-group-item border bg-dark border-0">
+                        <a href="https://www.youtube.com/channel/UCpK91QSVxobdc30JaTMvjJA?ybp=-gFHSUR8TUlYfENMQXxTQ3xZVHxQUk9TfFdFQnxNSVhTQ3xBd2FyZW5lc3N8T3duLUJyYW5kfE1JWHxTb2NtZWR8MjAyNDA3Mjk%253D"
+                            class="text-white text-decoration-none"><i class="bi bi-youtube"
+                                class="text-white text-decoration-none"></i> OLX INDONESIA</a>
+                    </li>
+                    <li class="list-group-item border bg-dark border-0">
+                        <a href="https://www.tiktok.com/@olx_id" class="text-white text-decoration-none"><i
+                                class="bi bi-tiktok"></i> @olx_id</a>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#product" class="card-link text-white">Produk</a>
+                    <a href="#order" class="card-link text-white">Outlet</a>
+                </div>
+            </div>
+            <div class=" bg-dark text-white mb-3 border-0 col-12 col-md-6">
+                <div class="card rounded-0 mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kunjungi Blog Kami</h5>
+                        <p class="card-text">Dapatkan informasi menarik seputar barang bekas, tips daur ulang, dan
+                            cerita inspiratif hanya di Bruosok Blog!
+                            <br><br>
+                            📝 Temukan wawasan baru setiap hari. <br>
+                            🌱 Mari bergerak bersama untuk lingkungan yang lebih baik.
+                            <br>
+                            Klik sekarang untuk membaca artikel terbaru dan bergabung dengan komunitas peduli
+                            keberlanjutan! <br>
+                            👉 Kunjungi Blog kami dan mulai eksplorasi Anda. 🚀
+                        </p>
+                        <a href="/blog/index.html" class="card-link">Go to Blog</a>
+                    </div>
+                </div>
+                <div class="card rounded-0 mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jelajahi Marketplace Kami</h5>
+                        <p class="card-text">
+                            Temukan beragam barang bekas berkualitas dan penawaran menarik hanya di Bruosok
+                            Marketplace!
+                            <br><br>
+                            🛒 Belanja hemat, kualitas hebat! <br>
+                            🎉 Jangan lewatkan diskon dan promo spesial! <br>
+
+                            Klik sekarang dan mulai perjalanan belanja Anda bersama kami! <br>
+                            👉 Kunjungi Marketplace dan nikmati kemudahan transaksi yang aman dan nyaman. 🚀
+                        </p>
+                        <a href="/shop/index.html" class="card-link">Go to Marketplace</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer primary text-white">
+        <div class="container py-4">
+            <div class="row">
+                <!-- Informasi -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">About Us</h5>
+                    <p>Learn more about our platform, mission, and vision.</p>
+                </div>
+                <!-- Navigasi -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Categories</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- Akun -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">My Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Login</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Register</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Order History</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Wishlist</a></li>
+                    </ul>
+                </div>
+                <!-- Sosial Media -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold">Follow Us</h5>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="m-0">&copy; 2024 Gruosok - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
